@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PandaTest</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="craft_your_dream_life">Craft your dream life, one habit at a time.</string>
+    <string name="insights">Insights</string>
+    <string name="track_your_progress_and_completion">Track your progress and completion.</string>
+    <string name="personal_progression">Personal Progression</string>
+    <string name="trending">Trending</string>
+    <string name="this_week">This Week</string>
+    <string name="read_30_pages">Read 30 Pages</string>
+    <string name="listen_to_podcast">Listen to Podcast</string>
+    <string name="work_on_gohabits">Work on Gohabits</string>
+</resources>

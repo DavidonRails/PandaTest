@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeActivity">
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="180sp"
+        android:src="@drawable/ic_tree_1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:layout_marginTop="@dimen/margin_top"/>
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="160sp"
+        android:src="@drawable/ic_tree_2"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="200sp"
+        android:src="@drawable/ic_tree_3"
+        android:adjustViewBounds="true"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_panda"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_above="@+id/tvWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40sp"/>
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_subtitle_size"
+            android:text="@string/welcome"
+            android:textColor="@color/gray_text_color"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tvCraftDream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_title_size"
+            android:text="@string/craft_your_dream_life"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_marginTop="8sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_normal"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:background="@drawable/bg_next"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70sp">
+        <ImageView
+            android:layout_width="25sp"
+            android:layout_height="20sp"
+            android:src="@drawable/ic_arrow"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+</RelativeLayout>
